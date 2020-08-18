@@ -1,0 +1,122 @@
+
+* {box-sizing: border-box}
+body {
+	font-family: Verdana;
+	margin: 0;
+	background-color: #1f2833;
+	transition: 0.3s;
+	}
+
+
+.about-dog {
+	padding: 10px;
+	max-width: 100%
+}
+
+.about-text {
+	padding: 10px;
+}
+.content {
+	text-align: center;
+}
+.button {
+	text-decoration: none;
+	background-color: dodgerblue;
+	text-align: center;
+	padding: 5px 20px;
+	color: white;
+}
+
+.about-table {
+	max-width:100%;
+	padding: 10px;
+	margin:5px;
+	text-align: center;
+	background: #c5c6c7;
+
+}
+
+
+/*@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+.fade-in {
+	animation: fadeIn ease .5s;
+}
+*/
+.title {
+	text-align: center;
+	color:#66fcf1;
+
+}
+
+.center_align {
+	text-align:center;
+}
+
+@media screen (min-width: 501px) and (max-width: 850px) {
+	.about-dog {
+		max-width:100%;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	.about-dog {
+		max-width:100%;
+	}
+	.about-table table, tbody, tr {
+		max-width: 100%;
+		margin: 25px;
+	}
+
+}
+
+@media screen and (min-width: 851px) {
+	.about-dog {
+		max-width: 50%;
+	}
+	.about-text {
+		font-size: 1.25vw;
+	}
+
+	.menu {
+	  	width: 35%;
+	  	float: left;
+	  	padding: 15px;
+	  	border: 1px solid red;
+	}
+
+	.main {
+	  	width: 65%;
+	  	float: left;
+	  	padding: 15px;
+	  	border: 1px solid red;
+	  	height: 30vw;
+	  	font-size: 2vw;
+	}
+	.contact_img {
+	  	max-width: 100%;
+	  	float: left;
+	  	padding: 5px;
+	}
+
+	.contact_head {
+		background-color: blue;
+		max-width: 100%;
+	}
+
+	.about-table table, tbody, tr {
+		right:0;
+		left:0;
+		top:0;
+		bottom:0;
+		width: 100%;
+		margin: 25px;
+		padding: 0;
+	}
+
+
+}
