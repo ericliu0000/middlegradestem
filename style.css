@@ -30,7 +30,7 @@ body {
 .about-team h4 {
 	color: #3fa152;
 }
-.about-team p {
+.about-team p, a {
 	color: white;
 }
 /*@keyframes fadeIn {
