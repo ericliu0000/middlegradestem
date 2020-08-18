@@ -3,34 +3,23 @@
 body {
 	font-family: Verdana;
 	margin: 0;
-	background-color: #1f2833;
+	background-color: #fff;
 	transition: 0.3s;
 	}
 
 
 .about-dog {
 	padding: 10px;
-	max-width: 100%
+	max-width: 100%;
 }
 
 .about-text {
 	padding: 10px;
 }
-.content {
-	text-align: center;
-}
-.button {
-	text-decoration: none;
-	background-color: dodgerblue;
-	text-align: center;
-	padding: 5px 20px;
-	color: white;
-}
 
 .about-table {
 	max-width:100%;
 	padding: 10px;
-	margin:5px;
 	text-align: center;
 	background: #c5c6c7;
 
@@ -48,7 +37,7 @@ body {
 */
 .title {
 	text-align: center;
-	color:#66fcf1;
+	color:white;
 
 }
 
@@ -56,11 +45,52 @@ body {
 	text-align:center;
 }
 
-@media screen (min-width: 501px) and (max-width: 850px) {
+.tag {
+	float: left;
+	position: absolute;
+	z-index: 1000;
+	background-color: #bcddd3;
+	padding: 5px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+ }
+.tag a {
+	background-color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+	color: black;
+	margin: 10px;
+}
+.tag p {
+	padding: 40px;
+}
+
+ .container {
+	 position:relative;
+ }
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
 	.about-dog {
 		max-width:100%;
 	}
-
+	.tag {
+		left: 25%;
+		top: 10%;
+		height: 80%;
+		width: 45%;
+	 }
+	 .tag h1{
+		 font-size: 5vw;
+	 }
+	 .tag p {
+		 padding: 10px;
+		 font-size: 3vw;
+	 }
+	 .about-table {
+		 margin-left: 5%;
+		 margin-right: 5%;
+	 }
 }
 
 @media screen and (max-width: 500px) {
@@ -71,10 +101,27 @@ body {
 		max-width: 100%;
 		margin: 25px;
 	}
+	.tag {
+		height: 100%;
+		width: 100%;
+	 }
+	 .tag h1{
+		 font-size: 5vw;
+	 }
+	 .about-table {
+		 margin:0;
+	 }
 
 }
 
-@media screen and (min-width: 851px) {
+@media screen and (min-width: 1001px) {
+	.tag {
+		left: 30%;
+		top: 25%;
+		height: 50%;
+		width: 35%;
+	 }
+
 	.about-dog {
 		max-width: 50%;
 	}
@@ -107,7 +154,10 @@ body {
 		background-color: blue;
 		max-width: 100%;
 	}
-
+	.about-table {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 	.about-table table, tbody, tr {
 		right:0;
 		left:0;
@@ -117,6 +167,31 @@ body {
 		margin: 25px;
 		padding: 0;
 	}
+	.tag h1{
+		font-size: 3vw;
+		margin-top: 5%;
+	}
 
 
+}
+
+.welcome-image {
+	width:100%;
+
+}
+.page-title {
+	text-align: center;
+}
+.classes-content {
+	background: #183c31;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding: 40px;
+	color:white;
+}
+
+.classes-content td {
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size:.9vw;
 }

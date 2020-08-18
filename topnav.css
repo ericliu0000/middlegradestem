@@ -7,7 +7,7 @@
 .navbar a {
   	float: left;
   	padding: 12px;
-  	color: #c5c6c7;
+  	color: white;
   	text-decoration: none;
   	font-size: 12px;
   	width: 25%; /* Four links of equal widths */
@@ -17,16 +17,16 @@
 
 
 .navbar a:hover {
-  	color: #1f2833;
+  	color: #d4d4d4;
 }
 
 .navbar a.active {
-  	color: #45a29e;
+  	color: #96bcb0;
 }
 
 
 .header {
-	background-color: #0b0c10;
+	background-color: #307862;
 	margin: 0;
 	top: 0;
 }
@@ -56,6 +56,6 @@
   	margin-right: auto;
   	background-size: contain;
   	border-radius: 50%;
-  	width: 150px;
+  	width: 200px;
   	padding: 40px;
 }
