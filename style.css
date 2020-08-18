@@ -17,15 +17,22 @@ body {
 	padding: 10px;
 }
 
-.about-table {
+.about-team {
 	max-width:100%;
 	padding: 10px;
 	text-align: center;
-	background: #c5c6c7;
-
+	background: #183c31;
+	overflow: inherit;
 }
-
-
+.about-team h3 {
+	color:#b7ffaa;
+}
+.about-team h4 {
+	color: #3fa152;
+}
+.about-team p {
+	color: white;
+}
 /*@keyframes fadeIn {
 	0% {opacity:0;}
 	100% {opacity:1;}
@@ -43,6 +50,14 @@ body {
 
 .center_align {
 	text-align:center;
+}
+
+.people {
+	width: 250px;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
 }
 
 .tag {
@@ -69,6 +84,11 @@ body {
  .container {
 	 position:relative;
  }
+.each-person p{
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: left;
+}
 
 @media screen and (min-width: 501px) and (max-width: 1000px) {
 	.about-dog {
@@ -87,7 +107,7 @@ body {
 		 padding: 10px;
 		 font-size: 3vw;
 	 }
-	 .about-table {
+	 .about-team {
 		 margin-left: 5%;
 		 margin-right: 5%;
 	 }
@@ -97,10 +117,6 @@ body {
 	.about-dog {
 		max-width:100%;
 	}
-	.about-table table, tbody, tr {
-		max-width: 100%;
-		margin: 25px;
-	}
 	.tag {
 		height: 100%;
 		width: 100%;
@@ -108,7 +124,7 @@ body {
 	 .tag h1{
 		 font-size: 5vw;
 	 }
-	 .about-table {
+	 .about-team {
 		 margin:0;
 	 }
 
@@ -154,22 +170,18 @@ body {
 		background-color: blue;
 		max-width: 100%;
 	}
-	.about-table {
+	.about-team {
 		margin-left: 10%;
 		margin-right: 10%;
-	}
-	.about-table table, tbody, tr {
-		right:0;
-		left:0;
-		top:0;
-		bottom:0;
-		width: 100%;
-		margin: 25px;
-		padding: 0;
+		height: 4000px;
 	}
 	.tag h1{
 		font-size: 3vw;
 		margin-top: 5%;
+	}
+	.each-person {
+		width: 50%;
+		float:left;
 	}
 
 
