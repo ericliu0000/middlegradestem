@@ -5,50 +5,18 @@
     bottom: 0;
     right: 0;
     width: 100%;
-    background-color: white;
-    color: black;
+    background-color: #6c9a8c;
+    color: white;
     text-align: center;
-}
-.footer table, tr{
-    width: 100%;
-}
-
-.footer td {
-    width: 25%;
+    height: 100px;
+    padding: 10px;
 }
 
-.avatar {
-  	display: block;
-  	background-size: contain;
-  	border-radius: 50%;
-  	width: 150px;
-  	padding: 40px;
-    margin: 20px;
-    margin-left: auto;
-}
 
 @media screen (min-width: 501px) and (max-width: 850px) {
-	.footer td {
-	  	float: none;
-	  	display: block;
-	  	width: 100%;
-	  	text-align: center;
-	}
-    .avatar {
-        margin-left: auto;
-        margin-right: auto;
-    }
+
 }
 
 @media screen (max-width: 500px) {
-  	.footer td {
-    	float: none;
-    	display: block;
-    	width: 100%;
-    	text-align: center;
-  	}
-    .avatar {
-        margin-left: auto;
-        margin-right: auto;
-    }
+
 }
