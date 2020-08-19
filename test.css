@@ -1,4 +1,3 @@
-
 * {box-sizing: border-box}
 body {
 	font-family: Verdana;
@@ -17,37 +16,23 @@ body {
 	padding: 10px;
 }
 
-.about-team {
+.about-table {
 	max-width:100%;
 	padding: 10px;
 	text-align: center;
-	background: #183c31;
-	overflow: inherit;
-}
-.about-team h3 {
-	color:#b7ffaa;
-}
-.about-team h4 {
-	color: #3fa152;
-}
-.about-team p, a {
-	color: white;
+	background: #c5c6c7;
+
 }
 
-.class-desc {
-	width: 50%;
-	float:left;
-	background-color: white;
-	padding: 5px;
-	color: black;
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
 
-.class-desc a {
-	background-color: 
+/*@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
 }
-
+.fade-in {
+	animation: fadeIn ease .5s;
+}
+*/
 .title {
 	text-align: center;
 	color:white;
@@ -56,14 +41,6 @@ body {
 
 .center_align {
 	text-align:center;
-}
-
-.people {
-	width: 250px;
-	border-radius: 50%;
-	position: relative;
-	overflow: hidden;
-	margin: 5px;
 }
 
 .tag {
@@ -90,11 +67,6 @@ body {
  .container {
 	 position:relative;
  }
-.each-person p{
-	padding-left: 40px;
-	padding-right: 40px;
-	text-align: left;
-}
 
 @media screen and (min-width: 501px) and (max-width: 1000px) {
 	.about-dog {
@@ -113,7 +85,7 @@ body {
 		 padding: 10px;
 		 font-size: 3vw;
 	 }
-	 .about-team {
+	 .about-table {
 		 margin-left: 5%;
 		 margin-right: 5%;
 	 }
@@ -123,6 +95,10 @@ body {
 	.about-dog {
 		max-width:100%;
 	}
+	.about-table table, tbody, tr {
+		max-width: 100%;
+		margin: 25px;
+	}
 	.tag {
 		height: 100%;
 		width: 100%;
@@ -130,7 +106,7 @@ body {
 	 .tag h1{
 		 font-size: 5vw;
 	 }
-	 .about-team {
+	 .about-table {
 		 margin:0;
 	 }
 
@@ -176,17 +152,22 @@ body {
 		background-color: blue;
 		max-width: 100%;
 	}
-	.about-team {
+	.about-table {
 		margin-left: 10%;
 		margin-right: 10%;
+	}
+	.about-table table, tbody, tr {
+		right:0;
+		left:0;
+		top:0;
+		bottom:0;
+		width: 100%;
+		margin: 25px;
+		padding: 0;
 	}
 	.tag h1{
 		font-size: 3vw;
 		margin-top: 5%;
-	}
-	.each-person {
-		padding-left: 15vw;
-		padding-right: 15vw;
 	}
 
 
@@ -207,11 +188,8 @@ body {
 	color:white;
 }
 
-.classes-content p {
+.classes-content td {
 	padding-left: 50px;
 	padding-right: 50px;
 	font-size:.9vw;
-}
-.classes-content h2 {
-	text-align: center;
 }
