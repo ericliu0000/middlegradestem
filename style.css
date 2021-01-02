@@ -28,14 +28,25 @@ body {
 	color: white;
 }
 
+.classes-content {
+	max-width:100%;
+	padding: 30px;
+	text-align: justify;
+	background: #183c31;
+	overflow: inherit;
+}
 .class-desc {
+	max-width:100%;
+	padding: 10px;
+	text-align: center;
+	overflow: inherit;
 	width: 50%;
 	float:left;
 	background-color: white;
 	color: black;
 	margin-bottom: 10px;
 	margin-top: 10px;
-	text-align: center;
+	border: solid 1px #b7ffaa;
 }
 
 .title {
@@ -142,12 +153,12 @@ body {
 		 text-align: center;
 	 }
 	 .class-desc {
-		 height: 350px;
 		 padding: 20px;
+		 width: 100%;
 	 }
 	 .classes-content {
-		 padding: 20px;
-		 height: 1350px;
+		 margin-left: 5%;
+		 margin-right: 5%;
 	 }
 	 .contact-main {
 	 	height: 850px;
@@ -182,12 +193,12 @@ body {
 		 text-align: center;
 	 }
 	 .classes-content {
- 		padding: 10px;
-		height: 1500px;
- 	}
+		 margin:0;
+	 }
 	.class-desc {
 		padding: 10px;
 		height: 400px;
+		width: 100%;
 	}
 	.contact-main {
 		height: 800px;
@@ -251,10 +262,8 @@ body {
 		width: 100%;
 	}
 	.classes-content {
-		margin-left: 200px;
-		margin-right: 200px;
-		padding: 40px;
-		height: 1000px;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 	.classes-content p {
 		padding-left: 50px;
@@ -264,7 +273,7 @@ body {
 	.class-desc {
 		padding: 1%;
 		float:left;
-		height: 250px;
+		min-height: 350px;
 	}
 	.contact-main {
 		height: 500px;
@@ -291,9 +300,13 @@ body {
 .class-desc a {
 	background-color: #3fa152;
 	text-decoration: none;
-	padding: 10px 20px;
-	margin: 5px;
+	padding: 10px 40px;
 }
+
+.class-bottom {
+	margin-bottom: 40px;
+}
+
 .date-time {
 	text-align: center;
 }
