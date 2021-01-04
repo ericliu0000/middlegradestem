@@ -7,6 +7,17 @@ body {
 	transition: 0.3s;
 	}
 
+	.websites-2020 a {
+	  	float: left;
+	  	padding: 12px 24px;
+	  	color: black;
+	  	text-decoration: none;
+	  	font-size: 12px;
+	  	width: 20%; /* Four links of equal widths */
+	  	text-align: center;
+	    background-color: white;
+	}
+
 .about-text {
 	padding: 10px;
 }
@@ -31,7 +42,7 @@ body {
 .classes-content {
 	max-width:100%;
 	padding: 30px;
-	text-align: justify;
+	text-align: center;
 	background: #183c31;
 	overflow: inherit;
 }
@@ -77,12 +88,16 @@ body {
 	font-weight: bold;
 	text-align: center;
  }
-.tag a {
+.button {
 	background-color: white;
 	text-decoration: none;
 	padding: 10px 20px;
 	color: black;
-	margin: 10px;
+
+}
+
+.buttons {
+	text-align: center;
 }
 .tag p {
 	padding: 40px;
@@ -163,6 +178,12 @@ body {
 	 .contact-main {
 	 	height: 850px;
 	 }
+	 .button {
+			 float: none;
+			 display: block;
+			 width: 100%;
+			 text-align: center;
+	 }
 
 }
 
@@ -202,6 +223,12 @@ body {
 	}
 	.contact-main {
 		height: 800px;
+	}
+	.button {
+			float: none;
+			display: block;
+			width: 100%;
+			text-align: center;
 	}
 
 
