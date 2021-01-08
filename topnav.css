@@ -59,3 +59,18 @@
   	width: 200px;
   	padding: 40px;
 }
+.notification {
+  width: 100%;
+  text-align: center;
+  background-color: #183c31;
+  color: white;
+  padding: 10px;
+}
+.notification p {
+  margin:0;
+}
+
+.notification a {
+  color: #96bcb0;
+  text-decoration: none;
+}
