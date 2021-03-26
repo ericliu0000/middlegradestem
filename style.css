@@ -319,7 +319,9 @@ body {
 	background: #183c31;
 	color:white;
 }
-
+.contact-desc a {
+	color:black;
+}
 
 .classes-content h2 {
 	text-align: center;
