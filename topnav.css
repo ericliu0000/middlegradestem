@@ -1,70 +1,64 @@
 .navbar {
-  	overflow: hidden;
-  	margin: 0px 20vw;
-  	bottom:0;
+	overflow: hidden;
+	width: 65%;
+
 }
-
 .navbar a {
-  	float: left;
-  	padding: 12px;
-  	color: white;
-  	text-decoration: none;
-  	font-size: 12px;
-  	width: 20%; /* Four links of equal widths */
-  	text-align: center;
-
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+  float: left;
+  padding: 12px;
+  text-align: center;
+  width: 20%; /* Four links of equal widths */
+	font-family: 'Montserrat', sans-serif;
 }
 
 
 .navbar a:hover {
-  	color: #d4d4d4;
+  color: #ebebeb;
+  background-color: #1da87d;
 }
 
 .navbar a.active {
-  	color: #96bcb0;
+	color: white;
+  background-color: #2fb57d;
+}
+
+.navbar a.active:hover {
+	color: black;
+  background-color: #1da87d;
 }
 
 
 .header {
-	background-color: #307862;
-	margin: 0;
-	top: 0;
+	background-color: #009A8B;/*#307862*/
+  /*position: fixed;*/
+	z-index: 3;
+  width: 100%;
+  top:0;
+}
+.title {
+	color: white;
+	padding-top: 5px;
+	text-align: left;
+	padding-left: 30px;
+	width: 35%;
+	margin:0;
+  font-size: 25px;
+	float: left;
+  text-decoration: none;
+	font-family: 'ZCOOL KuaiLe', cursive;
+
 }
 
 
-@media screen and (min-width: 501px) and (max-width: 850px) {
-	.navbar a {
-	  	float: none;
-	  	display: block;
-	  	width: 100%;
-	  	text-align: center;
-	}
-}
-
-@media screen and (max-width: 500px) {
-  	.navbar a {
-    	float: none;
-    	display: block;
-    	width: 100%;
-    	text-align: center;
-  	}
-}
-
-.center {
-  	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-  	background-size: contain;
-  	border-radius: 50%;
-  	width: 200px;
-  	padding: 40px;
-}
 .notification {
   width: 100%;
   text-align: center;
-  background-color: #183c31;
+  background-color: #043d26;
   color: white;
-  padding: 10px;
+  padding: 20px;
 }
 .notification p {
   margin:0;
@@ -74,3 +68,90 @@
   color: #96bcb0;
   text-decoration: none;
 }
+
+@media only screen and (min-width: 801px) and (max-width: 1150px) {
+	.navbar a {
+		border-bottom: none;
+		font-size: 26px;
+	}
+	.title {
+		float: left;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding-top: 10px;
+		padding-left: 0px;
+		font-size: 50px;
+	}
+	.navbar {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.navbar a:hover {
+	  color: white;
+		border-bottom: none;
+	}
+
+	.navbar a.active {
+		color: white;
+	  border-bottom: none;
+	}
+
+	.navbar a.active:hover {
+		color: black;
+		border-bottom: none;
+	}
+	.navbar a {
+  	float: left;
+		border-bottom: none;
+		font-size: 30px;
+  	width: 50%;
+  	text-align: center;
+	}
+	.title {
+		float: left;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding-top: 10px;
+		font-size: 30px;
+		padding-left: 0px;
+	}
+	.navbar {
+		float: none;
+		width: 100%;
+	}
+}
+
+.center {
+	display: block;
+	background-size: contain;
+	border-radius: 50%;
+	width: 150px;
+	padding: 40px;
+  float:left;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5ECC62;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00BE86;
