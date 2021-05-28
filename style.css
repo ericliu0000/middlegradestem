@@ -191,9 +191,6 @@ body {
 }
 
 @media screen and (max-width: 640px) {
-	body {
-		font-size: 30px;
-	}
 	.tag {
 		height: 100%;
 		width: 100%;
