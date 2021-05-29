@@ -32,7 +32,7 @@
 
 
 .header {
-	background-color: #009A8B;/*#307862*/
+	background-image: linear-gradient(to right, #065f44, #09a45c);/*#307862*/
   /*position: fixed;*/
 	z-index: 3;
   width: 100%;
