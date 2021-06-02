@@ -38,16 +38,10 @@ h4 {
 
 a {
 	font-family: 'Nunito', sans-serif;
+	color: inherit;
 }
-
-/* unvisited link */
-a:link {
-  color: inherit;
-}
-
-/* visited link */
-a:visited {
-  color: inherit;
+ul {
+	text-align:left;
 }
 
 /* mouse over link */
@@ -76,42 +70,28 @@ p {
 	    background-color: white;
 	}
 
-.about-text {
-	padding: 10px;
-}
-
-.about-team {
-	max-width:100%;
-	padding: 10px;
-	text-align: center;
-	background: #043d26;
-	overflow: inherit;
-}
-.about-team h3 {
-	color:#b7ffaa;
-}
-.about-team h4 {
-	color: #3fa152;
-	font-family: 'ZCOOL KuaiLe', cursive;
-}
-.about-team p, a {
-	color: white;
-}
-
 .date-time {
 	text-align: center;
 }
 
 .organized-gallery {
 	float: left;
-	width: 100%;
+	width: 95%;
+	margin: 5px 2.5%;
 }
 
 .classes {
+	width: 100%;
 	float: left;
-	margin: 20px;
 	padding: 20px;
+	margin: 20px auto;
+}
 
+.list {
+	margin: 0 auto;
+overflow-wrap: anywhere;
+word-wrap: anywhere;
+display: table;
 }
 
 .color-1 {
@@ -163,10 +143,6 @@ p {
 	overflow: hidden;
 }
 
-.center_align {
-	text-align:center;
-}
-
 .people {
 	width: 250px;
 	border-radius: 50%;
@@ -190,15 +166,37 @@ p {
 	font-family: 'ZCOOL KuaiLe', cursive;
 }
 
-.button {
-	background-color: white;
+.button-1 {
+	border: solid 2px white;
 	text-decoration: none;
-	padding: 10px 20px;
-	color: black;
+	padding: 20px 40px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
 
+.button-1:hover {
+  color: #bfbfbf;
+	border: solid 2px #bfbfbf;
+}
+
+.button-2 {
+	background-color: #4ec959;
+	text-decoration: none;
+	padding: 20px 40px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.button-2:hover {
+	background-color: #09a45c;
+  color: #bfbfbf;
 }
 
 .buttons {
+	padding: 20px 0;
+	margin: auto;
 	text-align: center;
 }
 .tag p {
@@ -208,11 +206,6 @@ p {
  .container {
 	 position:relative;
  }
-.each-person p{
-	padding-left: 40px;
-	padding-right: 40px;
-	text-align: left;
-}
 
 .contact-email {
 	background-color: #043d26;
@@ -228,16 +221,24 @@ p {
 	text-decoration: none;
 }
 
+.welcome-image {
+	width:100%;
+}
+}
+.contact-desc a {
+	color:black;
+}
+
 
 .contact-image {
 	border-radius: 50%;
 	width: 30%;
-
 }
 
-
-
 @media screen and (min-width: 801px) and (max-width: 1350px) {
+	.list {
+	margin: 0 20px;
+}
 	.tag {
 		left: 25%;
 		top: 10%;
@@ -254,10 +255,6 @@ p {
 	 .event {
 	 width: 100%;
  		}
-	 .about-team {
-		 margin-left: 5%;
-		 margin-right: 5%;
-	 }
 	 .contact-image {
 		 display: block;
 		 margin-left: auto;
@@ -275,12 +272,6 @@ p {
 	 .contact-main {
 	 	height: 850px;
 	 }
-	 .button {
-			 float: none;
-			 display: block;
-			 width: 100%;
-			 text-align: center;
-	 }
 	 .person-icon, .person-desc {
 	 	width: 100%;
 	 	float:left;
@@ -294,6 +285,9 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+	.list {
+	margin: 0 10px;
+}
 	.tag {
 		height: 100%;
 		width: 100%;
@@ -304,9 +298,6 @@ p {
 	 .event {
 	 width: 100%;
  }
-	 .about-team {
-		 margin:0;
-	 }
 	 .contact-image {
 		 display: block;
 		 margin-left: auto;
@@ -323,12 +314,6 @@ p {
 	 }
 	.contact-main {
 		height: 800px;
-	}
-	.button {
-			float: none;
-			display: block;
-			width: 100%;
-			text-align: center;
 	}
 	.person-icon, .person-desc {
 	 width: 100%;
@@ -347,36 +332,9 @@ p {
 		height: 50%;
 		width: 40%;
 	 }
-	.about-text {
-		font-size: 1.25vw;
-	}
-
-	.menu {
-	  	width: 35%;
-	  	float: left;
-	  	padding: 15px;
-	  	border: 1px solid red;
-	}
-
-	.main {
-	  	width: 65%;
-	  	float: left;
-	  	padding: 15px;
-	  	border: 1px solid red;
-	  	height: 30vw;
-	  	font-size: 2vw;
-	}
-	.about-team {
-		margin-left: 10%;
-		margin-right: 10%;
-	}
 	.tag h1{
 		font-size: 4vw;
 		margin-top: 5%;
-	}
-	.each-person {
-		padding-left: 15vw;
-		padding-right: 15vw;
 	}
 	.contact-email {
 		float:left;
@@ -397,13 +355,4 @@ p {
 	.contact-main {
 		height: 500px;
 	}
-
-}
-
-.welcome-image {
-	width:100%;
-}
-}
-.contact-desc a {
-	color:black;
 }
