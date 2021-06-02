@@ -7,6 +7,64 @@ body {
 	transition: 0.3s;
 	}
 
+h1 {
+  font-family: 'Patrick Hand', cursive;
+	font-size: 40px;
+	color: black;
+	text-align: center;
+	width: 100%;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: 'Patrick Hand', cursive;
+	text-align: center;
+	width: 100%;
+}
+
+h3 {
+	font-size: 25px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	width: 100%;
+}
+
+h4 {
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	text-align: center;
+}
+
+a {
+	font-family: 'Nunito', sans-serif;
+}
+
+/* unvisited link */
+a:link {
+  color: inherit;
+}
+
+/* visited link */
+a:visited {
+  color: inherit;
+}
+
+/* mouse over link */
+a:hover {
+  color: #555fd3;
+}
+
+/* selected link */
+a:active {
+  color: #59ccee;
+}
+
+p {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 	.websites-2020 a {
 	  	float: left;
 	  	padding: 12px 24px;
@@ -40,29 +98,70 @@ body {
 	color: white;
 }
 
-.classes-content {
-	max-width:100%;
-	padding: 30px;
+.date-time {
 	text-align: center;
-	background: #043d26;
-	overflow: inherit;
-	color: white;
 }
-.class-desc {
-	max-width:100%;
-	padding: 10px;
-	text-align: center;
-	overflow: inherit;
-	width: 50%;
+
+.organized-gallery {
+	float: left;
+	width: 100%;
+}
+
+.classes {
+	float: left;
+	margin: 20px;
+	padding: 20px;
+
+}
+
+.color-1 {
+		background-color: #003053;
+		color: white;
+}
+.color-2 {
+		background-color: #09a45c;
+		color: white;
+}
+
+.color-3 {
+		background-color: #065f44;
+		color: white;
+}
+
+.person {
+	float: left;
+	margin: 20px;
+	padding: 20px;
+}
+
+.person-icon {
+	width: 30%;
 	float:left;
-	background-color: white;
-	color: black;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	border: solid 1px #b7ffaa;
+	vertical-align: middle;
+	display: inline-block;
 }
 
+.person-icon img {
+	height: auto;
+	width: 100%;
+}
 
+.person-desc {
+	width: 70%;
+	float: left;
+	vertical-align: middle;
+}
+
+.event {
+	float: left;
+	width: 50%;
+}
+
+.event img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
 
 .center_align {
 	text-align:center;
@@ -138,7 +237,7 @@ body {
 
 
 
-@media screen and (min-width: 641px) and (max-width: 1290px) {
+@media screen and (min-width: 801px) and (max-width: 1350px) {
 	.tag {
 		left: 25%;
 		top: 10%;
@@ -152,6 +251,9 @@ body {
 		 padding: 10px;
 		 font-size: 3vw;
 	 }
+	 .event {
+	 width: 100%;
+ 		}
 	 .about-team {
 		 margin-left: 5%;
 		 margin-right: 5%;
@@ -169,14 +271,6 @@ body {
 		 width: 100%;
 		 padding: 20px;
 		 text-align: center;
-	 }
-	 .class-desc {
-		 padding: 20px;
-		 width: 100%;
-	 }
-	 .classes-content {
-		 margin-left: 5%;
-		 margin-right: 5%;
 	 }
 	 .contact-main {
 	 	height: 850px;
@@ -187,10 +281,19 @@ body {
 			 width: 100%;
 			 text-align: center;
 	 }
+	 .person-icon, .person-desc {
+	 	width: 100%;
+	 	float:left;
+	 }
+	 .person-icon img {
+		 width: 60%;
+		 		margin: auto;
+				display: block;
+	 }
 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
 	.tag {
 		height: 100%;
 		width: 100%;
@@ -198,6 +301,9 @@ body {
 	 .tag h1{
 		 font-size: 5vw;
 	 }
+	 .event {
+	 width: 100%;
+ }
 	 .about-team {
 		 margin:0;
 	 }
@@ -215,14 +321,6 @@ body {
 		 padding: 20px;
 		 text-align: center;
 	 }
-	 .classes-content {
-		 margin:0;
-	 }
-	.class-desc {
-		padding: 10px;
-		height: 400px;
-		width: 100%;
-	}
 	.contact-main {
 		height: 800px;
 	}
@@ -232,11 +330,17 @@ body {
 			width: 100%;
 			text-align: center;
 	}
-
+	.person-icon, .person-desc {
+	 width: 100%;
+	 float:left;
+	}
+	.person-icon img {
+		border-radius: 100%;
+	}
 
 }
 
-@media screen and (min-width: 1291px) {
+@media screen and (min-width: 1351px) {
 	.tag {
 		left: 30%;
 		top: 25%;
@@ -290,20 +394,6 @@ body {
 	.contact-desc p {
 		width: 100%;
 	}
-	.classes-content {
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-	.classes-content p {
-		padding-left: 50px;
-		padding-right: 50px;
-		font-size:.9vw;
-	}
-	.class-desc {
-		padding: 1%;
-		float:left;
-		min-height: 350px;
-	}
 	.contact-main {
 		height: 500px;
 	}
@@ -312,34 +402,8 @@ body {
 
 .welcome-image {
 	width:100%;
-
-}
-.page-title {
-	text-align: center;
-	font-family: 'Patrick Hand', cursive;
 }
 }
 .contact-desc a {
 	color:black;
-}
-
-.classes-content h2 {
-	text-align: center;
-}
-.class-desc a {
-	background-color: #3fa152;
-	text-decoration: none;
-	padding: 10px 40px;
-}
-
-.class-bottom {
-	margin-bottom: 40px;
-}
-
-.date-time {
-	text-align: center;
-}
-
-.classes-content h3 {
-	text-align: center;
 }
