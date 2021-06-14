@@ -46,7 +46,7 @@ ul {
 
 /* mouse over link */
 a:hover {
-  color: #555fd3;
+  color: #bcddd3;
 }
 
 /* selected link */
@@ -199,6 +199,10 @@ display: table;
 	margin: auto;
 	text-align: center;
 }
+.side-to-side {
+	display: inline-block;
+}
+
 .tag p {
 	padding: 40px;
 }
